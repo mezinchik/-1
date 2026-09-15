@@ -25,6 +25,26 @@ namespace Мезенцева_Лаба_1
         {
             return (hour >= 12 && hour <= 14) || (hour >= 18 && hour <= 20);
         }
+        public static int ReadInt(string prompt, int min, int max)
+        {
+            while (true)
+            {
+                Console.Write(prompt);
+                if (int.TryParse(Console.ReadLine(), out int v) && v >= min && v <= max)
+                    return v;
+                Console.WriteLine("Ошибка! Повторите ввод.");
+            }
+        }
+        public static double ReadDouble(string prompt, double min)
+        {
+            while (true)
+            {
+                Console.Write(prompt);
+                if (double.TryParse(Console.ReadLine(), out double v) && v >= min)
+                    return v;
+                Console.WriteLine("Ошибка! Повторите ввод.");
+            }
+        }
 
     }
 }
