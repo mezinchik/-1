@@ -16,6 +16,9 @@ namespace Мезенцева_Лаба_1
 
             double delivery = Class1.CalcDelivery(orderCost, distance, hour);
             double total = orderCost + delivery;
+
+            Console.WriteLine($"Стоимость доставки: {delivery} руб.");
+            Console.WriteLine($"Итого к оплате: {total} руб.");
         }
     }
 }
