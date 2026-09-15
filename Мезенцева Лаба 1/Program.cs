@@ -11,6 +11,8 @@ namespace Мезенцева_Лаба_1
         static void Main(string[] args)
         {
             double orderCost = Class1.ReadDouble("Введите стоимость заказа (руб.): ", 0);
+            double distance = Class1.ReadDouble("Введите расстояние доставки (км): ", 0);
+            int hour = Class1.ReadInt("Введите время заказа (час): ", 0, 23);
         }
     }
 }
