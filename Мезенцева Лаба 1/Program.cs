@@ -10,7 +10,7 @@ namespace Мезенцева_Лаба_1
     {
         static void Main(string[] args)
         {
-            
+            double orderCost = Class1.ReadDouble("Введите стоимость заказа (руб.): ", 0);
         }
     }
 }
