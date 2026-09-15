@@ -21,5 +21,10 @@ namespace Мезенцева_Лаба_1
 
             return basePrice;
         }
+        public static bool IsPeakHour(int hour)
+        {
+            return (hour >= 12 && hour <= 14) || (hour >= 18 && hour <= 20);
+        }
+
     }
 }
